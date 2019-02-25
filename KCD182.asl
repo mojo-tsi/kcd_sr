@@ -46,7 +46,7 @@ exit
 	
 isLoading
 {	// correct loading to be true only while not in dialog
-	current.loadingstate = (current.loading != 0 && current.dialog != 1 || current.FastTravel != 0);	
+	current.loadingstate = (current.loading != 0 && current.dialog != 1 )|| ( current.FastTravel != 0);	
 	return current.loadingstate;
 }
 
